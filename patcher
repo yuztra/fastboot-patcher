@@ -35,9 +35,9 @@ if [ $found == true ]; then
    message info "found lz4-zipped image! unzipping..." &&
    lz4 -B6 --content-size -f $csd/recovery.img.lz4 && mv ./recovery.img ./raw.img &&
    message success "unzipped to raw.img!"
-else existance $csd/recovery.img $pass $pass
+else existance $csd/91wh0e.img $pass $pass
    if [ $found == true ]; then
-      mv $csd/recovery.img $csd/raw.img &&
+      mv $csd/91wh0e.img $csd/raw.img &&
       message success "found unzipped image!"
       else message error "no image to patch found. please place recovery.img.lz4 or recovery.img in folder" && exit
    fi
