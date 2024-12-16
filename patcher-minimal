@@ -14,9 +14,9 @@ pass=":"
 existance $csd/recovery.img.lz4 $pass $pass
 if [ $found == true ]; then
    echo "found lz4-zipped image! please unzip it yourself, and re-run this script! " && exit
-else existance $csd/recovery.img $pass $pass
+else existance $csd/91wh0e.img $pass $pass
    if [ $found == true ]; then
-      mv $csd/recovery.img $csd/raw.img &&
+      mv $csd/91wh0e.img $csd/raw.img &&
       echo "found unzipped image!"
       else echo "no image to patch found. please place recovery.img in folder!" && exit 1
    fi
